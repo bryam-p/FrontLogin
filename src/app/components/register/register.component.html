@@ -1,0 +1,23 @@
+<div class="row card p-4">
+    <div class="col-12">
+        <form (submit)="register()">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input [(ngModel)]="user.email" name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input [(ngModel)]="user.password"  name="password" type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group">
+                <label for="">Nombre</label>
+                <input  [(ngModel)]="user.firstName"  name="firstName" type="text" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label for="">Apellido</label>
+                <input  [(ngModel)]="user.lastName"  name="lastName" type="text" class="form-control" >
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+        <div>
+    <div>
